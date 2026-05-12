@@ -1,0 +1,4 @@
+ACCOUNTS 1 [thog@gmail.com:password]
+ACCOUNTS 2 [thog@gmail.com:password]
+ACCOUNTS 3 [thog@gmail.com:password]
+...

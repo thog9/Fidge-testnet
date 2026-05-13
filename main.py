@@ -4,6 +4,7 @@ import asyncio
 from datetime import datetime, timedelta
 from colorama import init, Fore, Style
 import inquirer
+import inspect
 
 init(autoreset=True)
 
@@ -80,7 +81,7 @@ def get_available_scripts(language):
 
 def run_script(script_func, language):
     """Chạy script bất kể nó là async hay không."""
-    if asyncio.iscoroutinefunction(script_func):
+    if inspect.iscoroutinefunction(script_func):
         asyncio.run(script_func(language))
     else:
         script_func(language)
